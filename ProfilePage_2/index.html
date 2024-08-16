@@ -1,0 +1,55 @@
+<!-- Set the font-family of the body to Arial, sans-serif
+Center-align the #profile section and color its text with #FFFFFF
+Color .active-day elements with #00CC00 and .inactive-day with #CCCCCC to represent active and inactive days, 
+respectively -->
+
+<html>
+    
+<head>
+  <title>John Doe's Profile</title>
+  <style>
+    body {
+        background-color: darkslategrey;
+        font-family: Arial, sans-serif;
+    }
+    h2, p{
+        text-align: center;
+        color: white;
+    }
+    #profile {
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .active-day {
+        color: #00CC00;
+    }
+    .inactive-day {
+        color: #CCCCCC;
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="profile">
+    <img src="https://blob.sololearn.com/courses/ava.png">
+    <h2>John Doe</h2>
+    <p>🇺🇸USA</p>
+    <li>25 Followers</li>
+    <li>20 Following</li>
+    <li>⭐️1581 XP</li>
+  </ul>
+  <div id="streak">Streak
+    <ul>
+      <li class="active-day">M</li>
+      <li class="active-day">T</li>
+      <li class="active-day">W</li>
+      <li class="inactive-day">T</li>
+      <li class="inactive-day">F</li>
+      <li class="inactive-day">S</li>
+      <li class="inactive-day">S</li>
+    </ul>
+    <p>Current Streak: 3</p>
+    <p>Longest Streak: 16</p>
+  </div>
+</body>
+</html>
