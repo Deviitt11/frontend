@@ -1,0 +1,78 @@
+<!-- Apply display: inline to the list items in the profile section and add a 15px margin around them
+Add a 10px padding-top to the whole streak section (container)
+Apply display: inline to the list in the streak section and give it 5px margin and 5px padding
+Apply display: inline to the paragraphs in the streak section and add a 10px margin -->
+
+<html>
+    
+<head>
+  <title>John Doe's Profile</title>
+  <style>
+    body {
+        background-color: darkslategrey;
+        font-family: Arial, sans-serif;
+    }
+    h2, p{
+        text-align: center;
+        color: white;
+    }
+    #profile {
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .active-day {
+        color: #00CC00;
+    }
+    .inactive-day {
+        color: #CCCCCC;
+    }
+    li {
+        list-style: none;
+    }
+    #streak li {
+        background-color: white;
+        border-radius: 5px;
+        display: inline;
+        margin: 5px;
+        padding: 5px;
+    }
+    #streak p {
+        color: #676767;
+        display: inline;
+        margin: 10px;
+    }
+    #profile li {
+        display: inline;
+        margin: 15px;
+    }
+    #streak {
+        padding-top: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul id="profile">
+    <img src="https://blob.sololearn.com/courses/ava.png">
+    <h2>John Doe</h2>
+    <p>🇺🇸USA</p>
+    <li>25 Followers</li>
+    <li>20 Following</li>
+    <li>⭐️1581 XP</li>
+  </ul>
+  <div id="streak">Streak
+    <ul>
+      <li class="active-day">M</li>
+      <li class="active-day">T</li>
+      <li class="active-day">W</li>
+      <li class="inactive-day">T</li>
+      <li class="inactive-day">F</li>
+      <li class="inactive-day">S</li>
+      <li class="inactive-day">S</li>
+    </ul>
+    <p>Current Streak: 3</p>
+    <p>Longest Streak: 16</p>
+  </div>
+</body>
+</html>
