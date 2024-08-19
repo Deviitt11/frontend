@@ -1,0 +1,88 @@
+<!-- Apply animation-name: pulse to the .active-day elements
+Make the duration of the animation 2s and ensure it plays infinite times
+Use @keyframes for the pulse animation to make the text size change from 100% and 120% and back again,
+and change the color to #00CC00 at the 50% mark of the animation -->
+
+<html>
+    
+<head>
+  <title>John Doe's Profile</title>
+  <style>
+    body {
+        background-color: darkslategrey;
+        font-family: Arial, sans-serif;
+    }
+    h2, p{
+        text-align: center;
+        color: white;
+    }
+    #profile {
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .active-day {
+        color: #00CC00;
+        animation: pulse 2s infinite;
+    }
+    .inactive-day {
+        color: #CCCCCC;
+    }
+    li {
+        list-style: none;
+    }
+    #streak li {
+        background-color: white;
+        border-radius: 5px;
+        display: inline;
+        margin: 5px;
+        padding: 5px;
+    }
+    #streak p {
+        color: #676767;
+        display: inline;
+        margin: 10px;
+    }
+    #profile li {
+        display: inline;
+        margin: 15px;
+    }
+    #streak {
+        padding-top: 10px;
+    }
+    @keyframes pulse {
+        0%, 100% {
+            font-size: 100%;
+        }
+        50% {
+            font-size: 120%;
+            color: #00CC00;
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul id="profile">
+    <img src="https://blob.sololearn.com/courses/ava.png">
+    <h2>John Doe</h2>
+    <p>🇺🇸USA</p>
+    <li>25 Followers</li>
+    <li>20 Following</li>
+    <li>⭐️1581 XP</li>
+  </ul>
+  <div id="streak">Streak
+    <ul>
+      <li class="active-day">M</li>
+      <li class="active-day">T</li>
+      <li class="active-day">W</li>
+      <li class="inactive-day">T</li>
+      <li class="inactive-day">F</li>
+      <li class="inactive-day">S</li>
+      <li class="inactive-day">S</li>
+    </ul>
+    <p>Current Streak: 3</p>
+    <p>Longest Streak: 16</p>
+  </div>
+</body>
+</html>
